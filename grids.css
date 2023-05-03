@@ -125,6 +125,12 @@
 .gap-1 {
     gap: 1rem;
 }
+.centered {
+    justify-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* #endregion */
 @media (max-aspect-ratio: 1/1) { /* on vertically oriented devices */
     .mobile-hidden {
@@ -135,8 +141,8 @@
     .grid-90-2 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-    /* }
-    .grid-100-2:has(:nth-child(1).mobile-hidden) { 
+    }
+    /*.grid-100-2:has(:nth-child(1).mobile-hidden) { 
         grid-template-columns: 0 1fr;
     }
     .grid-100-2:has(:nth-child(2).mobile-hidden) {

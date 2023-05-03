@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Ohio</title>
-    
-    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Ohio</title>
 
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/"
-        }
-      }
-    </script>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 
-    <link rel="stylesheet" href="grids.css">
-    <script src="grids.js" defer></script>
+  <script
+    type="importmap"> { "imports": { "three": "https://unpkg.com/three@0.151.3/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/" } }</script>
+
+  <link rel="stylesheet" href="grids.css">
+  <script src="grids.js" defer></script>
+  <link rel="stylesheet" href="global.css">
+  <script src="global.js" defer></script>
 </head>
+
 <body>
-    <script type="module" src="threejs/bus.js" defer></script>
+  <nav>
+    <a href="food.html">
+      <div class="navButton centered"><img src="imgs/icons/food.png" alt="Food icon"></div>
+      <p class="centered">Food</p>
+    </a>
+    <a>
+      <div class="navButton centered"><img src="imgs/icons/bus.png" alt="Bus icon"></div>
+      <p class="centered">Transport</p>
+    </a>
+    <a>
+      <div class="navButton centered"><img src="imgs/icons/entertainment.png" alt="Entertainment icon"></div>
+      <p class="centered">Entertainment</p>
+    </a>
+    <a>
+      <div class="navButton centered"><img src="imgs/icons/house.png" alt="House icon"></div>
+      <p class="centered">Home</p>
+    </a>
+    <a>
+      <div class="navButton centered"><img src="imgs/icons/map.png" alt="Map icon"></div>
+      <p class="centered">Map</p>
+    </a>
+    <a>
+      <div class="navButton centered"><img src="imgs/icons/activities.png" alt="Activities icon"></div>
+      <p class="centered">Activities</p>
+    </a>
+  </nav>
 </body>
+
 </html>

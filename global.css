@@ -1,0 +1,60 @@
+:root {
+    --red: #e31b23;
+    --blue: #00539b;
+    --lightBlue: #4eacff;
+    --white: #fff;
+    --gray: #d2d2d2;
+    --black: #000;
+}
+
+html, body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: calc(1rem + 0.25vh);
+}
+
+nav {
+    display: grid;
+    position: sticky;
+    justify-items: center;
+    grid-auto-flow: column;
+    background-color: var(--lightBlue);
+    height: calc(min(6.5vw + 2vh, 20vh));
+    width: 100vw;
+    overflow: hidden;
+}
+nav a p{
+    margin-top: auto;
+    color: #000;
+}
+nav a {
+    text-decoration: none;
+}
+.navButton {
+    background-color: var(--white);
+    
+    width: calc(min(4vw + 0.66vh, 15vh));
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-top: 0.25vw;
+}
+.navButton img {
+    display: inline-block;
+    width: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-top: calc((4vw + 1vh) / 8);
+}
+
+@media (max-aspect-ratio: 1/1) { 
+    nav {
+        height: calc(24vh + 5vw); 
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+    .navButton {
+        width: calc(8vw + 1.32vh);
+    }
+}
