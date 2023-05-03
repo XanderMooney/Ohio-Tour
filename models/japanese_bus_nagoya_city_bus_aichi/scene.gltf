@@ -111,13 +111,13 @@
   ],
   "images": [
     {
-      "uri": "textures/Nagoya_baseColor.png"
+      "uri": "textures/Nagoya_emissive.png"
     },
     {
       "uri": "textures/Nagoya_metallicRoughness.png"
     },
     {
-      "uri": "textures/Nagoya_emissive.png"
+      "uri": "textures/Nagoya_baseColor.png"
     }
   ],
   "materials": [
