@@ -6,7 +6,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000)
 const renderer = new THREE.WebGLRenderer({ alpha: true })
-renderer.setSize(window.innerWidth, window.innerHeight, false)
+renderer.setSize(window.innerWidth * 2, window.innerHeight * 2, false)
 renderer.domElement.classList.add('canvas')
 renderer.outputEncoding = THREE.sRGBEncoding
 document.body.appendChild(renderer.domElement)
@@ -32,7 +32,7 @@ let time = 0;
 let clock = new THREE.Clock()
 function animate() {
 
-  time += clock.getDelta() / 10
+  time += clock.getDelta() / 9
 
   camera.position.x = Math.sin(time) * radius
   camera.position.z = Math.cos(time) * radius
@@ -46,5 +46,5 @@ addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.fov = 2 * Math.atan(Math.tan(20) / (16 / 10 * camera.aspect)) * 180 / Math.PI
   camera.updateProjectionMatrix()
-  renderer.setSize(window.innerWidth, window.innerHeight, false)
+  renderer.setSize(window.innerWidth * 2, window.innerHeight * 2, false)
 })
