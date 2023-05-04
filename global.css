@@ -17,51 +17,70 @@ html, body {
 
 nav {
     display: grid;
-    position: sticky;
+    position:fixed;
     justify-items: center;
     grid-auto-flow: column;
-    background-color: var(--lightBlue);
-    height: calc(min(6.5vw + 2vh, 20vh));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--blue);
+    height: calc(min(3.25vw + 2vh, 20vh));
     width: 100vw;
     overflow: hidden;
+    z-index: 100;
+}
+nav a {
+    display: grid;
+    grid-auto-flow: column;   
+    text-decoration: none;
 }
 nav a p{
     margin-top: auto;
     color: #000;
 }
-nav a {
-    text-decoration: none;
-}
 .navButton {
     background-color: var(--white);
-    
-    width: calc(min(4vw + 0.66vh, 15vh));
-    aspect-ratio: 1/1;
+    height: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
     margin-top: 0.25vw;
 }
-.navButton img {
+.navButton div img {
     display: inline-block;
-    width: 80%;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    margin-top: calc((4vw + 1vh) / 8);
+    height: 0%;
+    aspect-ratio: 1;
+    /* object-fit: contain; */
+    /* margin-top: calc((4vw + 1vh) / 8); */
+}
+#LogoBcg {
+    user-select: none;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.8;
+}
+#Logo {
+    width: calc(min(max(50vw, 25rem), 50rem));
+    margin-left: calc(50vw - (min(max(50vw, 25rem), 50rem) / 2));
+    margin-right: calc(50vw - (min(max(50vw, 25rem), 50rem) / 2));
+    top: 25vh;
+    z-index: 1;
+    transform: perspective(400px) rotateY(5deg);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #00505e);
+    user-select: none;
+    position: absolute;
 }
 
 @media (max-aspect-ratio: 1/1) { 
     nav {
-        height: calc(24vh + 5vw); 
-        grid-template-rows: 1fr 1fr;
+        height: calc(20vh + 4vw); 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
         align-items: center;
     }
     .navButton {
-        width: calc(8vw + 1.32vh);
+        height: 90%;
+        /* width: calc(8vw + 1.32vh); */
     }
-}
-
-.canvas {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+    #Logo {
+        top: 37.5vh;
+        transform: perspective(400px) rotateY(15deg);
+    }
 }
