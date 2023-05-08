@@ -6,7 +6,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000)
 const renderer = new THREE.WebGLRenderer({ alpha: true })
-renderer.setSize(window.innerWidth * 2, window.innerHeight * 2, false)
+renderer.setSize(window.innerWidth, window.innerHeight, false)
 renderer.domElement.classList.add('canvas')
 renderer.outputEncoding = THREE.sRGBEncoding
 document.body.appendChild(renderer.domElement)
