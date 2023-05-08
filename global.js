@@ -11,4 +11,6 @@ function toggleNav() {
     else {
         navbar.classList.add('closed')
     }
+
+    console.log('ayo')
 }
