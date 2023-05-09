@@ -44,7 +44,18 @@ function animate() {
 
 addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight
-  camera.fov = 2 * Math.atan(Math.tan(20) / (16 / 10 * camera.aspect)) * 180 / Math.PI
+  convertFov(100, window.innerWidth, window.innerHeight)
   camera.updateProjectionMatrix()
-  renderer.setSize(window.innerWidth * 2, window.innerHeight * 2, false)
+  renderer.setSize(window.innerWidth, window.innerHeight, false)
 })
+
+function convertFov(fov, vw, vh) {
+  const DEVELOPER_SCREEN_ASPECT_RATIO_HEIGHT = 10;
+  const DEVELOPER_SCREEN_ASPECT_RATIO_WIDTH = 16;
+  
+  return (
+      (Math.atan(Math.tan((fov * Math.PI) / 360) / ((DEVELOPER_SCREEN_ASPECT_RATIO_HEIGHT / DEVELOPER_SCREEN_ASPECT_RATIO_WIDTH) * (vw / vh))) *
+          360) /
+      Math.PI
+  );
+}
