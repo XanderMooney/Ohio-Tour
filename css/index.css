@@ -1,0 +1,25 @@
+#LogoBcg {
+    user-select: none;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.8;
+}
+#Logo {
+    width: calc(min(max(50vw, 25rem), 50rem));
+    margin-left: calc(50vw - (min(max(50vw, 25rem), 50rem) / 2));
+    margin-right: calc(50vw - (min(max(50vw, 25rem), 50rem) / 2));
+    top: 25vh;
+    z-index: 1;
+    transform: perspective(400px) rotateY(5deg);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #00115e);
+    user-select: none;
+    position: absolute;
+}
+#indexButton {
+    border: solid 1px var(--gray);
+    height: 10vh;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+    margin-top: 0.5px;
+}

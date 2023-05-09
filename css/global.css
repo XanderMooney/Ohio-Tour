@@ -1,3 +1,4 @@
+/* #region Global changes */
 :root {
     --red: #e31b23;
     --blue: #00539b;
@@ -8,7 +9,6 @@
 
     --navHeight: min(4.25vw + 3vh, 20vh);
 }
-
 html, body {
     padding: 0;
     border: 0;
@@ -16,12 +16,14 @@ html, body {
     font-family: sans-serif;
     font-size: calc(1rem + 0.25vh);
 }
+/* #endregion */
+/* #region navbar */
 nav {
     display: grid;
     position: fixed;
     justify-items: center;
     grid-auto-flow: column;
-    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 0 1fr 1fr 1fr;
     background-color: var(--blue);
     height: var(--navHeight);
     width: 100vw;
@@ -45,6 +47,8 @@ nav a p {
     display: grid;
     grid-auto-flow: row;   
     text-decoration: none;
+
+    transition: height 400ms ease-in;
 }
 .navButton div {
     height: calc(var(--navHeight) * .9 - 1.25rem);
@@ -54,6 +58,7 @@ nav a p {
     display: inline-block;
     height: 100%;
     aspect-ratio: 1;
+    user-select: none;
 }
 #navToggle {
     position: fixed;
@@ -72,45 +77,53 @@ nav a p {
     line-height: 50%;
 }
 nav.closed {
-    margin-top: -100%;
+    margin-top: calc(-1 * var(--navHeight));
 }
 body:has(nav.closed) #navToggle {
     margin-top: calc( var(--navHeight)-50%);
 }
-
-#LogoBcg {
-    user-select: none;
-    position: absolute;
-    background-color: #000;
-    opacity: 0.8;
-}
-#Logo {
-    width: calc(min(max(50vw, 25rem), 50rem));
-    margin-left: calc(50vw - (min(max(50vw, 25rem), 50rem) / 2));
-    margin-right: calc(50vw - (min(max(50vw, 25rem), 50rem) / 2));
-    top: 25vh;
-    z-index: 1;
-    transform: perspective(400px) rotateY(5deg);
-    filter: drop-shadow(0.5rem 0.5rem 0.5rem #00505e);
-    user-select: none;
-    position: absolute;
-}
+/* #endregion */
 
 @media (max-aspect-ratio: 1.75/1) { 
     :root {
         --navHeight: calc(20vh + 4vw);
     }
     nav { 
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        grid-template-columns: 0 1fr 1fr 1fr;
         grid-template-rows: 50% 50%;
         align-items: center;
     }
-    .navButton {
-        height: 90%;
-        /* width: calc(8vw + 1.32vh); */
+    .navButton div img {
+        height: 40%;
+    }
+    .navButton div {
+        aspect-ratio: unset;
+    }
+    nav.closed .navButton {
+        width: calc(var(--navHeight) / 2 * .9)
+    }
+    nav a p {
+        margin-top: -100%;
+    }
+    #navToggle {
+        width: 6vw;
+        height: calc(var(--navHeight) / 6)
     }
     #Logo {
         top: 37.5vh;
         transform: perspective(400px) rotateY(15deg);
     }
-  }
+}
+@media (max-aspect-ratio: 1/1) {
+    #navToggle {
+        width: 10vw;
+    }
+}
+@media (min-aspect-ratio: 1.75/1) {
+    nav.closed .navButton {
+        height: 0;
+        aspect-ratio: unset;
+        width: calc(var(--navHeight) * .9);
+    }
+}
