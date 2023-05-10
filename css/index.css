@@ -18,8 +18,13 @@
 #indexButton {
     border: solid 1px var(--gray);
     height: 10vh;
-    width: 99.3%;
+    width: 100%;
+    overflow: hidden;
+    
     color: #000;
     text-decoration: none;
     margin-top: 0.5px;
+}
+.no-overflow {
+    overflow: hidden;
 }
