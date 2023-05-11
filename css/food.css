@@ -1,0 +1,11 @@
+#foodTitle {
+    background: var(--blue);
+    background: linear-gradient(0deg, var(--blue) 0%, var(--lightBlue) 100%);
+    margin-top: -1rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100vw;
+}
+h1 {
+    color: #fff;
+}

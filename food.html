@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food in Ohio</title>
+
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+  <script
+    type="importmap"> { "imports": { "three": "https://unpkg.com/three@0.151.3/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/" } }</script>
+
+  <link rel="stylesheet" href="grids.css">
+  <script src="grids.js" defer></script>
+  <link rel="stylesheet" href="css/global.css">
+  <script src="global.js" defer></script>
+  <link rel="stylesheet" href="css/food.css">
+</head>
+
+<body>
+  <a onclick="toggleNav()" id="navToggle">
+    <p class="centered no-select">˅</p>
+  </a>
+  <nav class="closed">
+    <p></p>
+    <a href="index.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/house.png" alt="House icon"></div>
+      <p class="centered">Home</p>
+    </a>
+    <a href="food.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/food.png" alt="Food icon"></div>
+      <p class="centered">Food</p>
+    </a>
+    <a href="travel.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/bus.png" alt="Bus icon"></div>
+      <p class="centered">Travel</p>
+    </a>
+    <p></p>
+    <a href="fun.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/entertainment.png" alt="Entertainment icon"></div>
+      <p class="centered">Fun</p>
+    </a>
+    <a href="map.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/map.png" alt="Map icon"></div>
+      <p class="centered">Map</p>
+    </a>
+    <a href="activity.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/activities.png" alt="Activities icon"></div>
+      <p class="centered">Activity</p>
+    </a>
+  </nav>
+
+<div id="foodTitle">
+  <p class="padding"></p>
+  <h1 class="centered">Eat Local</h1>
+</div>
+
+</body>
+</html>

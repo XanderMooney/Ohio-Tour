@@ -17,6 +17,18 @@ html, body {
     font-size: calc(1rem + 0.25vh);
     overflow-y: hidden;
 }
+.bcg-blue {
+    background-color: var(--blue);
+}
+.bcg-lightBlue {
+    background-color: var(--lightBlue);
+}
+.bcg-white {
+    background-color: var(--white);
+}
+.bcg-gray {
+    background-color: var(--gray);
+}
 /* #endregion */
 /* #region navbar */
 nav {
@@ -85,6 +97,10 @@ body:has(nav.closed) #navToggle {
 }
 /* #endregion */
 
+.padding {
+    height: var(--navHeight);
+    width: 0;
+}
 @media (max-aspect-ratio: 1.75/1) { 
     :root {
         --navHeight: calc(20vh + 4vw);
