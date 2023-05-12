@@ -9,3 +9,18 @@
 h1 {
     color: #fff;
 }
+.card {
+    margin-top: auto;
+    margin-bottom: auto;
+    /* width: 90%; */
+    height: 50vh;
+    aspect-ratio: 2.5/3.5;
+    background-color: var(--white);
+    z-index: -1;
+    filter: drop-shadow(2px 2px 3px #000)
+}
+#cardHolder {
+    position: absolute; 
+    width: 100vw;
+    height: calc(100% - var(--navHeight)); 
+}

@@ -15,7 +15,7 @@ html, body {
     margin: 0;
     font-family: sans-serif;
     font-size: calc(1rem + 0.25vh);
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .bcg-blue {
     background-color: var(--blue);
@@ -101,6 +101,9 @@ body:has(nav.closed) #navToggle {
     height: var(--navHeight);
     width: 0;
 }
+.canvas {
+    z-index: 1;
+}
 @media (max-aspect-ratio: 1.75/1) { 
     :root {
         --navHeight: calc(20vh + 4vw);
@@ -130,6 +133,9 @@ body:has(nav.closed) #navToggle {
     #Logo {
         top: 37.5vh;
         transform: perspective(400px) rotateY(15deg);
+    }
+    .padding {
+        height: calc(var(--navHeight) / 2.5);
     }
 }
 @media (max-aspect-ratio: 1/1) {
