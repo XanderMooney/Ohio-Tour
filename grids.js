@@ -17,11 +17,10 @@ for (let i = 0; i < threeGrids.length; ++i) {
 }
 
 mobileQuery.addListener(mediaChange)
-mediaChange(mobileQuery)
+initGrids(mobileQuery)
 
 function mediaChange(e) {
     if (e.matches && !isMobile) {
-
         for (let i = 0; i < threeGrids.length; ++i) {
             threeGrids[i].classList.contains('grid-vertical') ?
                 threeGrids[i].style.gridTemplateRows = threeGrids[i].dataset.gridTemplate :
@@ -30,9 +29,26 @@ function mediaChange(e) {
         isMobile = true
     }
     else if (isMobile) {
+        // this logic needs to be rewritten in the future
         for (let i = 0; i < threeGrids.length; ++i) {
             threeGrids[i].style.gridTemplateRows = '1fr'
         }
         isMobile = false
+    }
+}
+
+function initGrids(mediaQuery) {
+    if (!mediaQuery.matches) {
+        for (let i = 0; i < threeGrids.length; ++i) {
+            threeGrids[i].classList.contains('grid-vertical') ?
+                threeGrids[i].style.gridTemplateRows = threeGrids[i].dataset.gridTemplate :
+                threeGrids[i].style.gridTemplateColumns = threeGrids[i].dataset.gridTemplate;
+        }
+    }
+    else {
+        // this logic needs to be rewritten in the future
+        for (let i = 0; i < threeGrids.length; ++i) {
+            threeGrids[i].style.gridTemplateRows = '1fr'
+        }
     }
 }
