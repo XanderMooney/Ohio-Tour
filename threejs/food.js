@@ -70,7 +70,6 @@ addEventListener("resize", () => {
 
 // Thanks to Jack Kennedy for this lovely repsonsiveness
 function convertFov(fov, vw, vh) {
-  console.log("ran")
   const DEVELOPER_SCREEN_ASPECT_RATIO_HEIGHT = 10;
   const DEVELOPER_SCREEN_ASPECT_RATIO_WIDTH = 16;
   

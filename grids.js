@@ -21,18 +21,11 @@ initGrids(mobileQuery)
 
 function mediaChange(e) {
     if (e.matches && !isMobile) {
-        for (let i = 0; i < threeGrids.length; ++i) {
-            threeGrids[i].classList.contains('grid-vertical') ?
-                threeGrids[i].style.gridTemplateRows = threeGrids[i].dataset.gridTemplate :
-                threeGrids[i].style.gridTemplateColumns = threeGrids[i].dataset.gridTemplate;
-        }
+        initGrids(e)
         isMobile = true
     }
     else if (isMobile) {
-        // this logic needs to be rewritten in the future
-        for (let i = 0; i < threeGrids.length; ++i) {
-            threeGrids[i].style.gridTemplateRows = '1fr'
-        }
+        initGrids(e)
         isMobile = false
     }
 }
@@ -40,15 +33,25 @@ function mediaChange(e) {
 function initGrids(mediaQuery) {
     if (!mediaQuery.matches) {
         for (let i = 0; i < threeGrids.length; ++i) {
-            threeGrids[i].classList.contains('grid-vertical') ?
-                threeGrids[i].style.gridTemplateRows = threeGrids[i].dataset.gridTemplate :
-                threeGrids[i].style.gridTemplateColumns = threeGrids[i].dataset.gridTemplate;
+            threeGrids[i].classList.contains('mobile-vertical') ?
+            threeGrids[i].style.gridTemplateColumns = threeGrids[i].dataset.gridTemplate :
+            threeGrids[i].style.gridTemplateRows = threeGrids[i].dataset.gridTemplate;
+            
+            threeGrids[i].classList.contains('mobile-vertical') ? 
+            threeGrids[i].style.gridTemplateRows = 'unset' :
+            threeGrids[i].style.gridTemplateColumns = 'unset';
         }
+    
     }
     else {
-        // this logic needs to be rewritten in the future
         for (let i = 0; i < threeGrids.length; ++i) {
-            threeGrids[i].style.gridTemplateRows = '1fr'
+            threeGrids[i].classList.contains('mobile-vertical') ?
+            threeGrids[i].style.gridTemplateRows = threeGrids[i].dataset.gridTemplate :
+            threeGrids[i].style.gridTemplateColumns = threeGrids[i].dataset.gridTemplate;
+                
+            threeGrids[i].classList.contains('mobile-vertical') ? 
+            threeGrids[i].style.gridTemplateColumns = 'unset' :
+            threeGrids[i].style.gridTemplateRows = 'unset' ;
         }
     }
 }

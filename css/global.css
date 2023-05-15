@@ -125,10 +125,11 @@ body:has(nav.closed) #navToggle {
     }
     nav a p {
         margin-top: -100%;
+        user-select: none;
     }
     #navToggle {
         width: 6vw;
-        height: calc(var(--navHeight) / 6)
+        height: calc(var(--navHeight) / 5)
     }
     #Logo {
         top: 37.5vh;
