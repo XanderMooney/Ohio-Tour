@@ -32,7 +32,8 @@
 @media(max-aspect-ratio: 1/1) {
     #Logo {
         width: 90vw;
-        margin-left: calc(45vw / 2);
-        margin-right: calc(45vw / 2);
+        margin-left: calc(50vw - 90vw / 2);
+        margin-right: calc(50vw - 90vw / 2); 
     }
+    
 }
