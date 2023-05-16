@@ -3,16 +3,23 @@ import { Box3 } from 'three'
 
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 
+let holder = document.getElementById('cardHolder').children[0].children[1]
+
 const scene = new THREE.Scene()
 const light = new THREE.AmbientLight(0xffffff)
 scene.add(light);
 const renderer = new THREE.WebGLRenderer({ alpha: true })
-const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000)
-renderer.setSize(window.innerWidth, window.innerHeight, false)
+const camera = new THREE.PerspectiveCamera(100, holder.clientWidth * 1.2 / holder.clientHeight * 1.2, 0.1, 1000)
+renderer.setSize(holder.clientWidth * 1.2, holder.clientHeight * 1.2, false)
+
 renderer.domElement.classList.add('canvas')
+renderer.domElement.style.position = 'absolute'
+renderer.domElement.style.marginTop = 'calc(-50vh * 1.2)'
 renderer.outputEncoding = THREE.sRGBEncoding
 renderer.outputColorSpace = THREE.SRGBColorSpace
-document.body.appendChild(renderer.domElement)
+
+
+holder.appendChild(renderer.domElement)
 
 const loader = new GLTFLoader()
 loader.load("../models/hamburger/scene.gltf", function(gltf) {
@@ -21,51 +28,28 @@ loader.load("../models/hamburger/scene.gltf", function(gltf) {
   
   scene.add(model)
   
-  model.rotation.set(0.1, 2.4, 0.6);
-
-  const box3 = new Box3().setFromObject(gltf.scene)
-  vector = new THREE.Vector3()
-  box3.getCenter(vector)
-  model.position.set(-vector.x + 35, -vector.y + 90, -vector.z - 120)
-
-  animate()
-}, undefined, function(error) {
-  console.log(error)
-});
-loader.load("../models/taco-from-poly-by-google/taco.gltf", function(gltf) {
-  const model = gltf.scene
-  let vector;
+  model.rotation.set(0.2, 2.1, 0.4);
   
-  model.rotation.set(0, -2.3, -0.3);
-
-  scene.add(model)
-
   const box3 = new Box3().setFromObject(gltf.scene)
   vector = new THREE.Vector3()
   box3.getCenter(vector)
-  model.position.set(-vector.x, -vector.y, -vector.z - 5)
+  model.position.set(-vector.x + 40, -vector.y + 50, -vector.z - 80)
 
   animate()
 }, undefined, function(error) {
   console.log(error)
 });
 
-let radius = 8;
-let time = 0;
-let clock = new THREE.Clock()
 function animate() {
-
-//   time += clock.getDelta()
-
   requestAnimationFrame(animate)
   renderer.render(scene, camera)
 }
 
 addEventListener("resize", () => {
-  camera.aspect = window.innerWidth / window.innerHeight
-  convertFov(100, window.innerWidth, window.innerHeight)
+  camera.aspect = holder.clientWidth * 1.2 / holder.clientHeight * 1.2
+  convertFov(100, holder.clientWidth * 1.2, holder.clientHeight * 1.2)
   camera.updateProjectionMatrix()
-  renderer.setSize(window.innerWidth, window.innerHeight, false)
+  renderer.setSize(holder.clientWidth * 1.2, holder.clientHeight * 1.2, false)
 })
 
 // Thanks to Jack Kennedy for this lovely repsonsiveness

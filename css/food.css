@@ -24,12 +24,22 @@ h1 {
     width: 100vw;
     height: calc(100% - var(--navHeight)); 
 }
+#cardHolder div {
+    height: 50vh;
+    aspect-ratio: 2.5/3.5;
+}
 
 @media (max-aspect-ratio: 1/1) {
     .card {
         margin-top: 1rem;
-        width: 90%;
+        width: 90vw;
+        height: unset;
         aspect-ratio: 3.5/2.5;
     }
-
+    #cardHolder div {
+        margin-top: 1rem;
+        width: 90vw;
+        height: unset;
+        aspect-ratio: 3.5/2.5;
+    }
 }
