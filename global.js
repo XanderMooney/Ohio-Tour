@@ -1,4 +1,4 @@
-let navOpen = true;
+let navOpen = false;
 const navbar = document.querySelector('nav')
 function toggleNav() {
     navOpen = !navOpen;

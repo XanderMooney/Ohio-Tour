@@ -1,0 +1,417 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        2.4108805656433105,
+        1.3976874351501465,
+        2.0046656131744385
+      ],
+      "min": [
+        -2.6147336959838867,
+        -2.1943323612213135,
+        -0.0623590424656868
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 786408,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        0.9999797940254211,
+        0.9999424815177917,
+        0.9999988675117493
+      ],
+      "min": [
+        -0.9999805092811584,
+        -0.9998737573623657,
+        -0.9999932646751404
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        0.9999985694885254,
+        0.9991379380226135,
+        0.9995698928833008,
+        1.0
+      ],
+      "min": [
+        -0.9999837875366211,
+        -0.9999960660934448,
+        -0.9999974370002747,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        0.9812489151954651,
+        0.9784802794456482
+      ],
+      "min": [
+        0.011746433563530445,
+        0.010769597254693508
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 524272,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        0.9812489151954651,
+        0.9784802794456482
+      ],
+      "min": [
+        0.011746433563530445,
+        0.010769597254693508
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 208299,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1572816,
+      "componentType": 5126,
+      "count": 24146,
+      "max": [
+        2.3819713592529297,
+        1.3978383541107178,
+        1.8176329135894775
+      ],
+      "min": [
+        -2.514455795288086,
+        -2.1187996864318848,
+        -0.05376697704195976
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1862568,
+      "componentType": 5126,
+      "count": 24146,
+      "max": [
+        0.9888625741004944,
+        0.9999778866767883,
+        0.9998496174812317
+      ],
+      "min": [
+        -0.9958034753799438,
+        -0.9995909929275513,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1048544,
+      "componentType": 5126,
+      "count": 24146,
+      "max": [
+        0.9999991059303284,
+        0.9893211126327515,
+        0.9999428987503052,
+        1.0
+      ],
+      "min": [
+        -0.9993720650672913,
+        -0.9999977946281433,
+        -0.9975736737251282,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1048544,
+      "componentType": 5126,
+      "count": 24146,
+      "max": [
+        0.9731813073158264,
+        0.9787482619285583
+      ],
+      "min": [
+        0.02132362313568592,
+        0.009479791857302189
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1241712,
+      "componentType": 5126,
+      "count": 24146,
+      "max": [
+        0.9731813073158264,
+        0.9787482619285583
+      ],
+      "min": [
+        0.02132362313568592,
+        0.009479791857302189
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 833196,
+      "componentType": 5125,
+      "count": 75957,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "¡Jacques (https://sketchfab.com/iJacques)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/croissant-ea9992f27d57427cb94944598bc83117",
+      "title": "Croissant"
+    },
+    "generator": "Sketchfab-12.59.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1137024,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1434880,
+      "byteOffset": 1137024,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2152320,
+      "byteOffset": 2571904,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1434880,
+      "byteOffset": 4724224,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 6159104,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Croissant_baseColor.png"
+    },
+    {
+      "uri": "textures/Croissant_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Croissant_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Croissant",
+      "normalTexture": {
+        "index": 2,
+        "scale": 0.3036688078874312,
+        "texCoord": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 1
+        },
+        "roughnessFactor": 0.6432914493968652
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Croissant_Croissant_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Croissant_Croissant_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TANGENT": 8,
+            "TEXCOORD_0": 9,
+            "TEXCOORD_1": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "9ec2941e9ac44325985bcf9702e7d9c9.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Croissant"
+    },
+    {
+      "mesh": 0,
+      "name": "Croissant_Croissant_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Croissant_Croissant_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

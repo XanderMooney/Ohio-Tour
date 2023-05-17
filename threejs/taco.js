@@ -28,12 +28,12 @@ loader.load("../models/taco-from-poly-by-google/taco.gltf", function(gltf) {
   
   scene.add(model)
   
-  model.rotation.set(0.5, 1.8, 0.3);
+  model.rotation.set(0.5, 1.6, 0.3);
 
   const box3 = new Box3().setFromObject(gltf.scene)
   vector = new THREE.Vector3()
   box3.getCenter(vector)
-  model.position.set(-vector.x + 1.5, -vector.y + 1.5, -vector.z - 2)
+  model.position.set(-vector.x + 1.5, -vector.y + 1.2, -vector.z - 2.1)
 
   animate()
 }, undefined, function(error) {
