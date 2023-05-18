@@ -104,6 +104,23 @@ body:has(nav.closed) #navToggle {
 .canvas {
     z-index: 1;
 }
+#jsonCardHolder {
+    margin-top: 5rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+}
+.jsonCard {
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 50vh;
+    aspect-ratio: 2.5/3.5;
+    background-color: var(--white);
+    z-index: -1;
+    filter: drop-shadow(2px 2px 3px #000)
+}
 @media (max-aspect-ratio: 1.75/1) { 
     :root {
         --navHeight: calc(20vh + 4vw);

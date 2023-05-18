@@ -1,0 +1,16 @@
+{
+    "cards": [
+        {
+            "title": "title",
+            "image": "image.png",
+            "link": "link.com",
+            "description": "A valid description"
+        },
+        {
+            "title": "A second Card",
+            "image": "Yeah this still don't work",
+            "link": "Hear me out.com",
+            "description" : "Let's see how long of a description I can make before I am bored. I am bored."
+        }
+    ]
+}
