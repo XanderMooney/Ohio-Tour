@@ -6,9 +6,9 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 const scene = new THREE.Scene()
 const light = new THREE.AmbientLight('0xffffff')
 scene.add(light);
-const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000)
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / (window.innerHeight / 2), 0.1, 1000)
 const renderer = new THREE.WebGLRenderer({ alpha: true })
-renderer.setSize(window.innerWidth, window.innerHeight, false)
+renderer.setSize(window.innerWidth, window.innerHeight / 2, false)
 renderer.domElement.classList.add('canvas')
 renderer.outputEncoding = THREE.sRGBEncoding
 document.body.appendChild(renderer.domElement)
@@ -45,10 +45,10 @@ function animate() {
 }
 
 addEventListener("resize", () => {
-  camera.aspect = window.innerWidth / window.innerHeight
-  convertFov(100, window.innerWidth, window.innerHeight)
+  camera.aspect = window.innerWidth / (window.innerHeight / 2)
+  convertFov(50, window.innerWidth, window.innerHeight / 2)
   camera.updateProjectionMatrix()
-  renderer.setSize(window.innerWidth, window.innerHeight, false)
+  renderer.setSize(window.innerWidth, window.innerHeight / 2, false)
 })
 
 // Thanks to Jack Kennedy for this lovely repsonsiveness
