@@ -1,0 +1,34 @@
+{
+    "cards": [
+        {
+            "title": "Emmett's Cafe",
+            "image": "https://www.columbusnavigator.com/wp-content/uploads/2018/08/emmetts-cafe-lunch-1.jpeg",
+            "link": "https://www.emmettscafe.com/",
+            "description": "Few things are more common and familiar than a cup of coffee and a bite to eat. Whether it's a quick breakfast after the gym, a working lunch, or a nourishing dinner with friends and family, food is central to everyday life."
+        },
+        {
+            "title": "Nada",
+            "image": "../imgs/nada.jpeg",
+            "link": "https://www.eatdrinknada.com/location/columbus/",
+            "description" : "The lunchbox comes with an order of tacos, your choice of side, and a donut. If you're looking for a little bit more substantial meal they also have some large plates like fried chicken or steak."
+        },
+        {
+            "title": "The Brown Bag Deli",
+            "image": "https://www.columbusnavigator.com/wp-content/uploads/2018/08/brown-bag-deli-sandwiches-lunch-1.jpeg",
+            "link": "http://www.thebrownbaggv.com/",
+            "description": "The Brown Bag Deli is always sure to be serving sensational seasonal dishes and all of your favorite deli classics."
+        },
+        {
+            "title": "Katalina's",
+            "image": "https://www.columbusnavigator.com/wp-content/uploads/2018/08/katalinas-lunch-tacos-1.jpeg",
+            "link": "https://www.katalinas.com/",
+            "description": "Katalina's is the essence of a trendy brunch. They have both sweet and savory dishes but their pancake balls are what they're really known for."
+        },
+        {
+            "title": "Brassica",
+            "image": "../imgs/Brassica.jpg",
+            "link": "http://brassicas.com/",
+            "description": "Brassica cares about the health of the environment and the people who eat there. Therefore, everything you'll eat a Brassica's is fresh and good for you."
+        }
+    ]
+}

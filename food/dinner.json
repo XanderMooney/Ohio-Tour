@@ -1,0 +1,40 @@
+{
+    "cards": [
+        {
+            "title": "Chapman's",
+            "image": "../imgs/chapman.jpg",
+            "link": "https://www.eatchapmans.com/",
+            "description": "Even though the menu jumps all over the place with dishes like General Tso's cauliflower, fried wings, khao soi, red snapper with heirloom beans, and excellent housemade ice cream, everything is well-executed."
+        },
+        {
+            "title": "Refectory",
+            "image": "https://refectory.com/wp-content/uploads/2019/10/Home-Catering.jpg",
+            "link": "https://refectory.com/",
+            "description": "If you're celebrating something big, or just find yourself in the mood for a proper terrine, Refectory has been a special occasion go-to for more than 40 years, and is pretty much the only place in Columbus that does classic French food."
+        },
+        {
+            "title": "Lindey's",
+            "image": "https://static.wixstatic.com/media/4085ce_2a4e1814ebf54ee8b396d54a168543a6~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_980,h_830,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4085ce_2a4e1814ebf54ee8b396d54a168543a6~mv2_d_6000_4000_s_4_2.jpg",
+            "link": "https://www.lindeys.com/",
+            "description": "It's always a good time of year to eat at Lindey's, an upscale bistro in charming German Village. Servers still wear ties and the menu is pure '90s bistro"
+        },
+        {
+            "title": "Comune",
+            "image": "../imgs/comune.jpg",
+            "link": "https://www.comune-restaurant.com/",
+            "description": "“I don't feel like I'm in Columbus,” is a common sentiment heard around the intimate bar and dining room that feels straight out of a Scandinavian design catalog. It's always a solid choice for date night, and the menu is a pretty big departure from traditionally meat-heavy Midwestern restaurants"
+        },
+        {
+            "title": "Veritas",
+            "image": "../imgs/veritas.jpg",
+            "link": "https://veritasrestaurant.com/",
+            "description": "The dining room, decorated with hanging herbs and flowers from the ceiling, looks into a glass-walled kitchen. Meanwhile, the multi-course dinners celebrate ingredients and dishes from specific countries and regions like Spain and Scandinavia."
+        },
+        {
+            "title": "Joya's",
+            "image": "../imgs/joyas.avif",
+            "link": "https://www.eatatjoyas.com/",
+            "description": "Head to charming Old Worthington to check out this laid-back daytime Bengali-American cafe."
+        }
+    ]
+}

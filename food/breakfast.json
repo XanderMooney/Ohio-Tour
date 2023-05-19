@@ -1,16 +1,46 @@
 {
     "cards": [
         {
-            "title": "title",
-            "image": "image.png",
-            "link": "link.com",
-            "description": "A valid description"
+            "title": "Lox Bagel Shop",
+            "image": "../imgs/loxBagels.jpg",
+            "link": "https://www.theloxbagelshop.com/",
+            "description": "the lox bagel shop produces hand rolled, boiled and baked bagels and bagel sandwiches in the heart of the short north."
         },
         {
-            "title": "A second Card",
-            "image": "Yeah this still don't work",
-            "link": "Hear me out.com",
-            "description" : "Let's see how long of a description I can make before I am bored. I am bored."
+            "title": "Starliner Diner",
+            "image": "../imgs/starliner.jpg",
+            "link": "https://starlinerdiner.com/",
+            "description" : "With its eclectic menu and kitschy decor, Starliner offers customers an alternative to the cookie cutter, big chain restaurants by providing them with a unique and fun dining experience."
+        },
+        {
+            "title": "The Pancake House",
+            "image": "../imgs/pancakehouse.jpg",
+            "link": "https://www.pancakehousecolumbus.com/",
+            "description": "In addition to excelling at their namesake dish, they also draw on their background to serve up huevos rancheros, breakfast tamales, and a Venezuelan brunch platter with arepas."
+        },
+        {
+            "title": "South of Lane",
+            "image": "../imgs/southoflane.jpg",
+            "link": "http://www.southoflanecafe.com/",
+            "description": "South of Lane is the kind of quaint and cozy cafe you look for in the cold months of the year. The little Upper Arlington spot is part cafe and part eclectic boutique, so while you feast on waffles and omelets, you can eye the jewelry and other items on the shelves."
+        },
+        {
+            "title": "Tommy's Diner",
+            "image": "https://breakfastwithnick.com/wp-content/uploads/tommys-diner-columbus-11.jpeg",
+            "link": "http://www.tommysdiner.com/",
+            "description": "Tommy's Diner has been an iconic staple of the Franklinton neighborhood for over 30 years. Tom and Kathy Pappas created this concept with hustle, hard work and a vision of the American dream."
+        },
+        {
+            "title": "Katalina's",
+            "image": "../imgs/emmetts.jpg",
+            "link": "https://www.katalinas.com/",
+            "description": "Homemade food with attitude... Latin-leaning and Southern slanted... Filled with friends & flavor galore, Katalina's Cafe is Home of The Original Pancake Balls™ and so much more!"
+        }, 
+        {
+            "title": "Emmett's Cafe",
+            "image": "../imgs/katalinas.jpg",
+            "link": "https://www.emmettscafe.com/",
+            "description": "Emmett's is modeled on Australian-style coffee shops, which offer expert coffee service alongside a dynamic menu going beyond simple pastries or breakfast."
         }
     ]
 }

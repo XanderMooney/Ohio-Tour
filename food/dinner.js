@@ -1,4 +1,4 @@
-fetch('./breakfast.json', {
+fetch('./dinner.json', {
     method: 'GET',
     headers: {
         'Accept': 'application/json',

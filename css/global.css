@@ -108,18 +108,46 @@ body:has(nav.closed) #navToggle {
     margin-top: 5rem;
     justify-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, 16rem);
+    padding: 1rem;
+    gap: 1rem;
 }
 .jsonCard {
     display: grid;
+    grid-template-rows: 3rem 1fr 1fr;
     margin-top: auto;
     margin-bottom: auto;
-    height: 50vh;
+    height: calc(22rem);
     aspect-ratio: 2.5/3.5;
     background-color: var(--white);
     z-index: -1;
-    filter: drop-shadow(2px 2px 3px #000)
+    filter: drop-shadow(2px 2px 3px #000);
+    color: #000;
+    text-decoration: none;
+    z-index: 1;
+    text-align: center;
+}
+.jsonCard img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin: 0;
+}
+.jsonCard h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.jsonCard p {
+    font-size: 70%;
+}
+#Title {
+    background: var(--blue);
+    background: linear-gradient(0deg, var(--blue) 0%, var(--lightBlue) 100%);
+    margin-top: -1rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100vw;
 }
 @media (max-aspect-ratio: 1.75/1) { 
     :root {
@@ -159,6 +187,17 @@ body:has(nav.closed) #navToggle {
 @media (max-aspect-ratio: 1/1) {
     #navToggle {
         width: 10vw;
+    }
+    #jsonCardHolder {
+        grid-template-columns: 1fr;
+    }
+    .jsonCard {
+        width: 90%;
+    }
+    .jsonCard img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 @media (min-aspect-ratio: 1.75/1) {
