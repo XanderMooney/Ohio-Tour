@@ -1,0 +1,22 @@
+{
+    "cards": [
+        {
+            "title": "Bike",
+            "image": "./imgs/Bicycle.jfif",
+            "link": "https://www.columbus.gov/publicservice/Bicycle-Program/",
+            "description": "The Department of Public Service builds and maintains facilities to help those travelling in and around the Columbus area to use bicycles and a green, low cost and healthy means of travel."
+        },
+        {
+            "title": "Walking",
+            "image": "./imgs/walk.jpg",
+            "link": "https://www.columbus.gov/Templates/Detail.aspx?id=64884",
+            "description": "Columbus has made it a priority to increase the walkability of its neighborhoods."
+        },
+        {
+            "title": "Public Transport",
+            "image": "./imgs/bus.jfif",
+            "link": "https://www.cota.com/",
+            "description": "Riding around via bus could not be easier via COTA bus riding guides and regulations"
+        }
+    ]
+}

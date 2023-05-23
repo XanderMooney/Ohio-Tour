@@ -1,0 +1,22 @@
+{
+    "cards": [
+        {
+            "title": "Columbus Zoo",
+            "image": "./imgs/columbZoo.jpg",
+            "link": "https://www.columbuszoo.org/",
+            "description": "The Columbus Zoo and Aquarium is home to more than 10,000 animals representing more than 600 species worldwide."
+        },
+        {
+            "title": "COSI",
+            "image": "./imgs/cosi.jpg",
+            "link": "https://cosi.org/",
+            "description": "COSI is a nationally esteemed science center that has delighted Central Ohio with all things science for 58 years, inspiring interest in science, technology, engineering, and math (STEM) topics and delivering experiential, hands-on fun brand of learning."
+        },
+        {
+            "title": "Legoland",
+            "image": "./imgs/legoland.jpg",
+            "link": "https://www.legolanddiscoverycenter.com/columbus/",
+            "description": "a creative and engaging experience for kids of all ages and one of Columbus' newest attractions in the past couple years. Here, you can Immerse yourself in the history, technology and sheer joy of one of the world's favorite toys: Legos!"
+        }
+    ]
+}

@@ -11,7 +11,7 @@ const renderer = new THREE.WebGLRenderer({ alpha: true })
 renderer.setSize(window.innerWidth, window.innerHeight / 2, false)
 renderer.domElement.classList.add('canvas')
 renderer.outputEncoding = THREE.sRGBEncoding
-document.body.appendChild(renderer.domElement)
+document.getElementById('busLocation').appendChild(renderer.domElement)
 
 const loader = new GLTFLoader()
 let vector;
