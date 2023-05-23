@@ -1,12 +1,80 @@
-Models:
-https://sketchfab.com/3d-models/japanese-bus-nagoya-city-bus-aichi-37c0a04a7aef4139b6aa037d17e768e5
-https://sketchfab.com/3d-models/taco-from-poly-by-google-6e790dbdc2db497c82e8e2379eba7a0c
-https://sketchfab.com/3d-models/hamburger-92f2f18d1546406a9f488344cc8f2407#download
-https://sketchfab.com/3d-models/croissant-ea9992f27d57427cb94944598bc83117#download
+<!DOCTYPE html>
+<html lang="en">
 
-Images:
-openclipart.org
-freeiconspng.com
-thenounproject.com
-flaticon.com
-simply-delicious-food.com
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Ohio</title>
+
+  <script
+    type="importmap"> { "imports": { "three": "https://unpkg.com/three@0.151.3/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/" } }</script>
+
+  <link rel="stylesheet" href="grids.css">
+  <script src="grids.js" defer></script>
+  <link rel="stylesheet" href="css/global.css">
+  <script src="global.js" defer></script>
+</head>
+
+<body>
+  <a onclick="toggleNav()" id="navToggle">
+    <p class="centered no-select">˅</p>
+  </a>
+  <nav class="closed">
+    <p></p>
+    <a href="index.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/house.png" alt="House icon"></div>
+      <p class="centered">Home</p>
+    </a>
+    <a href="food.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/food.png" alt="Food icon"></div>
+      <p class="centered">Food</p>
+    </a>
+    <a href="travel.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/bus.png" alt="Bus icon"></div>
+      <p class="centered">Travel</p>
+    </a>
+    <p></p>
+    <a href="fun.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/entertainment.png" alt="Entertainment icon"></div>
+      <p class="centered">Fun</p>
+    </a>
+    <a href="map.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/map.png" alt="Map icon"></div>
+      <p class="centered">Map</p>
+    </a>
+    <a href="Credits.html" class="navButton">
+      <div class="centered"><img src="imgs/icons/activities.png" alt="Activities icon"></div>
+      <p class="centered">Credits</p>
+    </a>
+  </nav>
+
+<p class="padding"></p>
+  <div style="width:50%;" class="centered">
+  <p>Models:</p>
+  <ul style="padding-left: 0;">
+      <a href="https://sketchfab.com/3d-models/japanese-bus-nagoya-city-bus-aichi-37c0a04a7aef4139b6aa037d17e768e5">Bus Model</a>
+      <br>
+      <a href="https://sketchfab.com/3d-models/taco-from-poly-by-google-6e790dbdc2db497c82e8e2379eba7a0c">Taco Model</a>
+      <br>
+      <a href="https://sketchfab.com/3d-models/hamburger-92f2f18d1546406a9f488344cc8f2407#download">Hamburger Model</a>
+      <br>
+    <a href="https://sketchfab.com/3d-models/croissant-ea9992f27d57427cb94944598bc83117#download">Croissant Model</a>
+  </ul>
+  
+  <p>Images:</p>
+  <ul style="padding-left: 0;">
+    <a href="openclipart.org">Open Clip Art</a>
+    <br>
+    <a href="freeiconspng.com">Free Icons PNG</a>
+    <br>
+    <a href="thenounproject.com">The Noun Project</a>
+    <br>
+    <a href="flaticon.com">Flat Icon</a>
+    <br>
+    <a href="simply-delicious-food.com">Simply Delicious Food</a>
+  </ul>
+</div>
+
+</body>
+</html>
